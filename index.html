@@ -7,9 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
   <title>Tim Bouma</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color2: 0xff00f0,
+        birdSize: 1.70,
+        wingSpan: 40.00,
+        seperation: 100.00,
+        alignment: 77.00,
+        cohesion: 30.00,
+        quantity: 5.00,
+        backgroundAlpha: 0.0
+      })
+    }) 
+  </script>
 </head>
 
 <body>
+  <div id="vanta"></div>
   <main>
     <header>
       <img src="./images/tim02.png" />
